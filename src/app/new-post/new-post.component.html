@@ -1,0 +1,60 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form (ngSubmit)="title = titleP.value; content = contentP.value; onSubmit()" #postForm="ngForm">
+        <label>Title:</label>
+        <input type="text" class="form-control" id="title" #titleP>
+        <label>Content:</label>
+        <textarea class="form-control" id="content" #contentP></textarea>
+      <br>
+
+        <button type="submit" class="btn btn-success" [disabled]="false" >Add POST</button>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Teko:400,700" rel="stylesheet">
+   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+			<div class="section-content">
+				<h1 class="section-header">BLOG <span class="content-header wow fadeIn " data-wow-delay="0.2s" data-wow-duration="2s"> Moonshutle</span></h1>
+				
+			</div>
+			<div class="contact-section">
+			<div class="container">
+				<form (ngSubmit)="title = titleP.value; content = contentP.value; onSubmit()" #postForm="ngForm">
+					<!-- <div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				<label for="exampleInputUsername">Your name</label>
+					    	<input type="text" class="form-control" id="" placeholder=" Enter Name">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email Address</label>
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+					  	</div>	
+					  	
+			  		</div> -->
+			  		<div class="col-md-6 form-line">
+              <div class="form-group">
+			  				<label for ="title"> Title</label>
+                <input type="text" class="form-control" id="" placeholder=" Enter Name" #titleP>			  			</div>
+			  			<div class="form-group">
+			  				<label for ="content"> Content</label>
+			  			 	<textarea  class="form-control" id="content" placeholder="Enter Your Content" #contentP></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Add POST</button>
+			  			</div>
+			  			
+					</div>
+				</form>
+			</div>
